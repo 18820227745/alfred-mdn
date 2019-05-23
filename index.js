@@ -1,7 +1,7 @@
 "use strict";
 
 const alfy = require("alfy");
-const mdnBase = "https://developer.mozilla.org/en-US/search"
+const mdnBase = "https://developer.mozilla.org/zh-CN/search"
 
 alfy.fetch(`${mdnBase}.json?q=${alfy.input}`, { transform })
     .then(results => {
